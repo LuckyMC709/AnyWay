@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Anyway",
+    "slug": "anyway-emergency-mesh",
+    "platforms": ["android"],
+    "version": "1.9.2",
+    "orientation": "portrait",
+    "icon": "./assets/anyway-icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#06111f",
+    "android": {
+      "package": "com.juanpelliza.anyway",
+      "versionCode": 14,
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#061536",
+        "foregroundImage": "./assets/anyway-adaptive-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "./plugins/withAnywayPermissions.js",
+      "expo-secure-store",
+      "expo-sqlite"
+    ]
+  }
+}

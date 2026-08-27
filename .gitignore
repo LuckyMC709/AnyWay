@@ -1,0 +1,56 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# APKs compilados. Cada uno pesa ~75 MB y hay 13: juntos son ~1 GB, mas que
+# todo el codigo del proyecto por dos ordenes de magnitud. Git guarda cada
+# version entera para siempre, asi que subirlos vuelve el clon lento para
+# siempre aunque despues se borren. Van como adjuntos de un Release.
+*.apk
+
+# Salida de compilacion redirigida fuera de iCloud (ver android/build.gradle)
+.gradle/
+
+# Salida de compilacion de los modulos nativos propios. El /android de arriba
+# solo tapa la carpeta de la raiz, no la de cada modulo.
+modules/*/android/build/
+modules/*/android/.cxx/
+modules/*/ios/build/
